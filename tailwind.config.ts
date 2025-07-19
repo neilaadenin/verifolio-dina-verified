@@ -18,6 +18,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Inter', 'system-ui', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -51,6 +54,16 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
+				},
+				verified: {
+					DEFAULT: 'hsl(var(--verified))',
+					foreground: 'hsl(var(--verified-foreground))',
+					light: 'hsl(var(--verified-light))'
+				},
+				claim: {
+					DEFAULT: 'hsl(var(--claim))',
+					foreground: 'hsl(var(--claim-foreground))',
+					light: 'hsl(var(--claim-light))'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
