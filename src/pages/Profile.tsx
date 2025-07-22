@@ -5,10 +5,13 @@ import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { CheckCircle, Plus, FileText, Share2, Edit3 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { useToast } from "@/hooks/use-toast";
 import ManualInputModal from "@/components/ManualInputModal";
+import Navbar from "@/components/Navbar";
 
 const Profile = () => {
   const navigate = useNavigate();
+  const { toast } = useToast();
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const verifiedSkills = [
@@ -25,37 +28,30 @@ const Profile = () => {
 
   const handleShare = () => {
     navigator.clipboard.writeText("https://verifolio.app/dina");
-    // You could add a toast here to confirm copy
+    toast({
+      title: "Link berhasil disalin",
+      description: "Link profile sudah ada di clipboard Anda",
+    });
   };
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="border-b bg-card">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <CheckCircle className="h-6 w-6 text-primary" />
-            <h1 className="text-xl font-bold text-foreground">Verifolio</h1>
-          </div>
-          <div className="flex items-center space-x-4">
-            <Button
-              onClick={handleShare}
-              variant="outline"
-              size="sm"
-              className="rounded-xl"
-            >
-              <Share2 className="h-4 w-4 mr-2" />
-              Bagikan Profile
-            </Button>
-            <div className="flex items-center space-x-2">
-              <span className="text-sm text-muted-foreground">Dina</span>
-              <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
-                <span className="text-sm font-medium text-primary">D</span>
-              </div>
-            </div>
-          </div>
+      <Navbar />
+      
+      {/* Page Actions */}
+      <div className="border-b bg-card/50">
+        <div className="max-w-4xl mx-auto px-6 py-3 flex justify-end">
+          <Button
+            onClick={handleShare}
+            variant="outline"
+            size="sm"
+            className="rounded-xl"
+          >
+            <Share2 className="h-4 w-4 mr-2" />
+            Bagikan Profile
+          </Button>
         </div>
-      </header>
+      </div>
 
       {/* Main Content */}
       <main className="max-w-4xl mx-auto px-6 py-8">

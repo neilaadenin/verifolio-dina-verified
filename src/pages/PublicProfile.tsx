@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle, FileText, Edit3, Share2, ExternalLink, Copy } from "lucide-react";
+import { CheckCircle, FileText, Edit3, ExternalLink, Copy } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import Navbar from "@/components/Navbar";
 
 const PublicProfile = () => {
   const { toast } = useToast();
@@ -39,34 +40,30 @@ const PublicProfile = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="border-b bg-card">
-        <div className="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <CheckCircle className="h-6 w-6 text-primary" />
-            <h1 className="text-xl font-bold text-foreground">Verifolio</h1>
-          </div>
-          <div className="flex items-center space-x-2">
-            <Button
-              onClick={handleCopyLink}
-              variant="outline"
-              size="sm"
-              className="rounded-xl"
-            >
-              <Copy className="h-4 w-4 mr-2" />
-              Salin Link
-            </Button>
-            <Button
-              onClick={handleShareLinkedIn}
-              size="sm"
-              className="rounded-xl"
-            >
-              <ExternalLink className="h-4 w-4 mr-2" />
-              Bagikan ke LinkedIn
-            </Button>
-          </div>
+      <Navbar />
+      
+      {/* Share Actions */}
+      <div className="border-b bg-card/50">
+        <div className="max-w-4xl mx-auto px-6 py-3 flex justify-end space-x-2">
+          <Button
+            onClick={handleCopyLink}
+            variant="outline"
+            size="sm"
+            className="rounded-xl"
+          >
+            <Copy className="h-4 w-4 mr-2" />
+            Salin Link
+          </Button>
+          <Button
+            onClick={handleShareLinkedIn}
+            size="sm"
+            className="rounded-xl"
+          >
+            <ExternalLink className="h-4 w-4 mr-2" />
+            Bagikan ke LinkedIn
+          </Button>
         </div>
-      </header>
+      </div>
 
       {/* Main Content */}
       <main className="max-w-4xl mx-auto px-6 py-8">

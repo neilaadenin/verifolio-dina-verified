@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Upload as UploadIcon, FileText, Sparkles, ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useToast } from "@/hooks/use-toast";
+import Navbar from "@/components/Navbar";
 
 const Upload = () => {
   const navigate = useNavigate();
@@ -62,23 +63,23 @@ const Upload = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="border-b bg-card">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center space-x-4">
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={() => navigate("/dashboard")}
-              className="rounded-xl"
-            >
-              <ArrowLeft className="h-4 w-4 mr-2" />
-              Kembali
-            </Button>
-            <h1 className="text-xl font-bold text-foreground">Unggah Sertifikat</h1>
-          </div>
+      <Navbar />
+      
+      {/* Page Header */}
+      <div className="border-b bg-card/50">
+        <div className="max-w-6xl mx-auto px-6 py-3 flex items-center space-x-4">
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={() => navigate("/dashboard")}
+            className="rounded-xl"
+          >
+            <ArrowLeft className="h-4 w-4 mr-2" />
+            Kembali
+          </Button>
+          <h1 className="text-xl font-bold text-foreground">Unggah Sertifikat</h1>
         </div>
-      </header>
+      </div>
 
       {/* Main Content */}
       <main className="max-w-2xl mx-auto px-6 py-12">
