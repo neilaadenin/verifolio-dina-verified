@@ -2,37 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Verifolio Design System - Clean, modern, minimalist blockchain resume verification app
+/* Proofolio Design System - Clean, modern, minimalist blockchain resume verification app
+Light and soft color palette with indigo/blue primary
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    /* Base colors - Light, clean, trustworthy */
-    --background: 0 0% 98%;
-    --foreground: 220 13% 18%;
+    /* Base colors - Clean white and soft grays */
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 13% 18%;
+    --card-foreground: 222.2 84% 4.9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 13% 18%;
+    --popover-foreground: 222.2 84% 4.9%;
 
-    /* Primary - Modern blue for CTAs */
-    --primary: 213 94% 68%;
+    /* Primary - Indigo/Blue for CTAs */
+    --primary: 231 73% 57%;
     --primary-foreground: 0 0% 100%;
 
     /* Secondary - Soft neutral */
-    --secondary: 210 20% 96%;
-    --secondary-foreground: 220 13% 18%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222.2 84% 4.9%;
 
     /* Muted - Light grays */
-    --muted: 210 20% 96%;
-    --muted-foreground: 220 9% 46%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
     /* Accent - Soft highlight */
-    --accent: 210 20% 96%;
-    --accent-foreground: 220 13% 18%;
+    --accent: 220 14% 96%;
+    --accent-foreground: 222.2 84% 4.9%;
 
     /* Verified - Light green for verified items */
     --verified: 142 71% 45%;
@@ -51,7 +52,7 @@ All colors MUST be HSL.
     /* Borders and inputs */
     --border: 220 13% 91%;
     --input: 220 13% 91%;
-    --ring: 213 94% 68%;
+    --ring: 231 73% 57%;
 
     /* Rounded corners - modern and soft */
     --radius: 1rem;

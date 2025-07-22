@@ -77,7 +77,7 @@ const Upload = () => {
             <ArrowLeft className="h-4 w-4 mr-2" />
             Kembali
           </Button>
-          <h1 className="text-xl font-bold text-foreground">Unggah Sertifikat</h1>
+          <h1 className="text-xl font-bold text-foreground">Upload Certificate</h1>
         </div>
       </div>
 
@@ -86,10 +86,10 @@ const Upload = () => {
         <Card className="border-0 shadow-lg">
           <CardHeader className="text-center pb-6">
             <CardTitle className="text-2xl font-bold text-foreground">
-              Unggah Sertifikat Anda
+              Upload Your Certificate
             </CardTitle>
             <p className="text-muted-foreground">
-              Contoh: "Certified ICP Developer"
+              Example: "Certified React Developer" or "AWS Solutions Architect"
             </p>
           </CardHeader>
           
