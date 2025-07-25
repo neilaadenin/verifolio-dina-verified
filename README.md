@@ -1,73 +1,37 @@
-# Welcome to your Lovable project
+# 🧾 Verifolio – Decentralized Portfolio on ICP
 
-## Project info
+Verifolio is a decentralized digital portfolio platform built using **React** and powered by the **Internet Computer Protocol (ICP)**.
 
-**URL**: https://lovable.dev/projects/814af4cc-60d5-47bf-bf1c-9bdfdb417ec6
+> This BUIDL empowers creators to securely store and showcase their works — from designs and documents to full creative assets — on tamper-proof smart contracts (canisters). With blockchain-level integrity and a Web2-friendly frontend, Verifolio merges usability with transparency.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## ✨ Features
 
-**Use Lovable**
+- ✅ Upload and store digital files on canisters (ICP smart contracts)
+- 🧾 Timestamped and immutable file ownership
+- 🔒 Tamper-proof integrity & blockchain authenticity
+- 🌐 Web2-like experience with Web3 under the hood
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/814af4cc-60d5-47bf-bf1c-9bdfdb417ec6) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Tech Stack
 
-**Use your preferred IDE**
+| Layer      | Technology             |
+|------------|------------------------|
+| Frontend   | React.js               |
+| Styling    | [Tailwind] |
+| Blockchain | Internet Computer Protocol (ICP) |
+| Smart Contract | Canisters (Motoko) |
+| Web3 Agent | `@dfinity/agent`, `@dfinity/candid` |
+| Package Manager | npm / yarn         |
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## ⚙️ Getting Started (Local Development)
 
-Follow these steps:
+### 1. Clone the Repo
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/814af4cc-60d5-47bf-bf1c-9bdfdb417ec6) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+```bash
+git clone https://github.com/neilaadenin/verifolio-dina-verified.git
+cd verifolio-dina-verified
